@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Trado</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{% static 'payments/main.js' %}"></script>
+</head>
+<body class="text-center">
+    <img src="{% static 'img/coin.png' %}" height="100" width="100"
+    class="mt-5 mb-3">
+    <section>
+      <p>
+        Purchase 10 Coins by clicking below button!
+      </p>
+      <div>
+        <button class="btn btn-primary mt-3" id="submitBtn">Purchase!</button>
+      </div>
+      </section>
+      
+</body>
+</html>

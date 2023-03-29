@@ -1,0 +1,7 @@
+Django
+django-allauth
+django-extensions
+python-dotenv
+stripe
+psycopg2-binary
+black
