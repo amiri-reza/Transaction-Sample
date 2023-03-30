@@ -98,3 +98,4 @@ def stripe_webhook(request):
         # else:
         #     return PaymentForm()
     return HttpResponse(status=200)
+

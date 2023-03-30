@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +17,14 @@
     class="mt-5 mb-3">
     <section>
       <p>
-        Purchase 10 Coins by clicking below button!
+        {% trans 'Purchase 10 Coins by clicking below button!' %}
       </p>
       <div>
         <button class="btn btn-primary mt-3" id="submitBtn">Purchase!</button>
       </div>
       </section>
+
+
       
 </body>
 </html>
