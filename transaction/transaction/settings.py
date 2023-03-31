@@ -100,8 +100,8 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "transaction",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
+        "USER": "reza",
+        "PASSWORD": "reza",
         "HOST": "localhost",
     }
 }
