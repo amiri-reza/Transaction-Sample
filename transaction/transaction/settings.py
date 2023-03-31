@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-from django.utils.translation import gettext_lazy as _
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +27,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*", "34.159.204.86"]
 
 
 # Application definition
@@ -101,8 +100,8 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "transaction",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
+        "USER": "reza",
+        "PASSWORD": "reza",
         "HOST": "localhost",
     }
 }
@@ -142,7 +141,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -160,10 +160,6 @@ AUTH_USER_MODEL = "users.User"
 
 
 
-LANGUAGES = [
-    ("de", _("German")),
-    ("en", _("English")),
-]
 
 
 SITE_ID = 1

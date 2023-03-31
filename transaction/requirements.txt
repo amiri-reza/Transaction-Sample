@@ -5,3 +5,5 @@ python-dotenv
 stripe
 psycopg2-binary
 black
+gunicorn
+
